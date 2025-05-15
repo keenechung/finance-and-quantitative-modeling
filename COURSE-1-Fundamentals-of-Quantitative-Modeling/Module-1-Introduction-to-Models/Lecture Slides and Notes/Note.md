@@ -2,6 +2,8 @@
 
 
 
+
+
 ## 1.1 Course Introduction, Slide 1 - 3
 Goals:
 - Exporesure to the language of modeling
@@ -9,6 +11,8 @@ Goals:
 - The process of modeling and how to critique models
 - The value and limitations of quantitative models
 - Foundation material for the other three courses in the Specialization
+
+
 
 
 
@@ -40,6 +44,8 @@ Model: $Prop = \frac{e^{2(Year - 2.5)}}{1 + e^{2(Year - 2.5)}}$ <br>
 
 
 
+
+
 ## 1.3 How Models are Used in Practice, Slide 11 - 13
 ### How models are used in practice?
 - Prediction: (calculating a single output)
@@ -64,6 +70,8 @@ Model: $Prop = \frac{e^{2(Year - 2.5)}}{1 + e^{2(Year - 2.5)}}$ <br>
 - Create an institutional memory
 - Used as a decision support tool
 - Serendipitous insight generator
+
+
 
 
 
@@ -102,12 +110,42 @@ Model: $Prop = \frac{e^{2(Year - 2.5)}}{1 + e^{2(Year - 2.5)}}$ <br>
 
 `All models are wrong but some are useful`
 
+
+
+
+
 ## 1.5 A Vocabulary for Modeling, Slide 15 - 20
+### A modeling Lexicon
+- Theory Driven vs. Data Driven
+- Deterministic vs Probabilistic/Stochastic
+- Discrete vs. Continuous Variables
+- Static vs. Dynamic
+### Data Driven vs. Theory Driven
+Empirical (based on observations/experiments) <------> Theoretical
+- Theory: given a set of assumptions and relationships, then what are the logical consequences?
+    * Example: if we assume that markets are efficient then what should the price of a stock option be?
+- Data: given a set of observations, how can we approximate the underlying process that generated them?
+    * Example: I've separated out my profitable customers from the unprofitable ones. Now, what features are able to differentiate them?
+### Deterministic vs. Probabilistic/Stochastic
+- Deterministic: given a fixed set of inputs, the model always gives the same output.
+    * Example: Invest $1000 at 4% annual compound interest for 2 years. After 2 years the initial $1000 will ALWAYS be worth $1081.60
+- Probabilistic/Stochastic: Even with identical inputs, the model output can vary from instance to instance.
+    * Example: A person spends $1000 on lottery tickets. After draawing how much they worth depends on a random variable, whether or not they won the lottery.
+### Discrete vs. Continuous Variables
+- Discrete: characterized by jumps and distinct values.
+- Continuous: a smooth process with an infinite number of potential values in any fixed interval.
+### Static vs. Dynamic
+- Statis: the model captures a single snapshot of the business process.
+    * Given a website's installed software base, what are the chances that it is compromised today?
+- Dynamic: the evolution of the process itself is of interest. The model describes the movement from state to state.
+    * Given a person's participation in a job training program, how long will it take until he/she finds a job and then, if they find one, for how long wil they keep it?
+
+
 
 
 
 ## 1.6 Mathematical Functions, Slide 21 - 33
-
+###
 
 
 ## 1.7 Summary, Slide 34 - 36
