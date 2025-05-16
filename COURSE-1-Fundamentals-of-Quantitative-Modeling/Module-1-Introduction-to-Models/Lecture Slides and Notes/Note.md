@@ -101,7 +101,7 @@ Model: $Prop = \frac{e^{2(Year - 2.5)}}{1 + e^{2(Year - 2.5)}}$ <br>
                             /                \
             (Back to step [A])                  [Implement model]
     -------------------------------------------------------------------
-![alt text](Screenshots/modeling-workflow.png)
+![Modeling Workflow](Screenshots/modeling-workflow.png)
 ### What if the model doesn't always work?
 - When the observed outcome differs greatly from the model's prediction (lousy predicting model), then there is the possibility of learning from this event if we can understand why the difference occurs
     * Then it turns out that that can be very, very informative, because if you can identify the reason why your model has not predicted or performed well, you've probably learned something new that you didn't know before. And that Is one of the great benefits of modeling, the actual ability to learn new things through the process by realizing that your current understanding isn't able to map to reality.
@@ -144,13 +144,81 @@ Empirical (based on observations/experiments) <------> Theoretical
 
 
 
-## 1.6 Mathematical Functions, Slide 21 - 33
-###
+## 1.6 Mathematical Functions, Slide 21 - 32
+### Key mathematical functions:
+- Four math functions provide the foundations for quantitative modeling:
+    - Linear
+    - Power
+    - Exponential
+    - Log
+### The Linear Function
+![Linear function](Screenshots/linear.png)
 
+Function: $ y = mx + b $
+- x is the input, y is the output
+- b is the intercept
+- m is the slope
+- Essential characteristic: the slope is constant
+    - A one-unit change in x corresponds to an m-unit change in y
 
-## 1.7 Summary, Slide 34 - 36
+We have to ask if the assumption is linear, for example, salary and times might not be the best for linear model, salary goes up in the beginning and tend to slow down and level up later on. Not a linear model.
 
+### The Power Function
+![Power function](Screenshots/power.png)
 
+Function: $ y = x^m $
+- x is the base
+- m is the exponent
+- Essential characteristic:
+    - A one percent (proportionate) change in x corresponds to an approximate m percent (proportionate) change in y
+    => If x changes by 1 % (not unit) then y is changed by approximately m %
+- Facts:
+    - $ x^m x^n = x^{m+n} $
+    - $ x^{-m} = 1/x^m $
+
+Reciprocal of a number: reciprocal of x is denoted as $1/x$
+
+### The Exponential Function
+![Exponential function](Screenshots/exponential.png)
+
+Function: $ y = e^{mx} $
+- e is the mathematical constant: 2.71828......
+- Notice that as compared to a power function, x is in the exponent of the function and not the base.
+- Essential characteristic:
+    - The rate of change of y is proportional to y itself.
+- Intepretation of m for small values of m (say -0.2 <= m <= 0.2)
+    - For very one-unit change in x, there is an approximate 100m% (proportionate) change in y
+    - Example: if m=0.05, then one-unit increase in x is associated with an approximate 100*0.05% = 5% increase in y
+
+- Because $e^0 = 1$, $y = e^{mx} = e^{m0} = 1$, power function always start at y=1
+
+### The Log Function
+![Log function 1](Screenshots/log1.png)
+![Log function 2](Screenshots/log2.png)
+<br>
+`Proportionate change in x is associated with constant change in y`
+
+- The log function is very usefull for modeling processes that exhibit diminishing returns to scale.
+- These are processes that increase but at a decreasing rate.
+- Essential characteristic:
+    - A constant proportionate change in x is associated with the same absolute change in y.
+
+Function: $ y = log_b(x) $
+- b is called the base of the algorithm.
+- THe most frequently sed base is the number $e$ and the logarithm is called the "natural log"
+- The log undoes (in the inverse of) the exponential function:
+    - $ log_e{e}^x = x $
+    - $ e^{log_e{x}} = x $
+- $ log(xy) = log(x) + log(y) $
+
+## 1.7 Summary, Slide 33 - 36
+![Four Functions](Screenshots/fourfunctions.png)
+
+- Uses for models
+- Steps in the modeling process
+    - It's an iterative process and model validation is key.
+- Discussed various types of models, discrete vs. continuous, etc.
+- Reviewed essential mathematical functipns that form the foundation of quantitative models.
 
 
 
