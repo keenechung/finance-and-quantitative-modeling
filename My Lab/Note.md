@@ -192,7 +192,7 @@ Function: $ y = e^{mx} $
 
 
 ------------------------------------------------------------
-## Module 2: Deterministic models and optimization
+## Module 2: Deterministic / Linear models and optimization
 - Linear models:
 - Growth and decay in discrete time
 - Growth and decay in continuous time
@@ -389,3 +389,38 @@ If it is not realisti, then a straight line model is probably not the way to go.
 
 
 
+
+------------------------------------------------------------
+## Module 3: Probabilistic Models
+- Contents:
+    - What are probabilistic models?
+    - Random variables and probability distritutions - the building blocks
+    - Examples of probabilistic models
+    - Summaries of probability distritutions: means, variances, and standard deviation
+    - Special random variables: Bernoulli, Binomial, and Normal
+    - The Empirical Rule
+------------------------------------------------------------
+### 3.1 Intro to Probabilistic Models, slide 1 - 6
+------------------------------------------------------------
+### 3.2 Examples of Probabilistic Models, slide 7
+------------------------------------------------------------
+### 3.3 Regression Models, slide 8 - 9
+------------------------------------------------------------
+### 3.4 Probability Trees, slide 10
+------------------------------------------------------------
+### 3.5 Monte Carlo Simulation, slide 11 - 12
+------------------------------------------------------------
+### 3.6 Markov Chain Models, slide 13 - 14
+------------------------------------------------------------
+### 3.7 Building Blocks of Probability Models, slide 15 - 19
+------------------------------------------------------------
+### 3.8 The Bernoulli Distribution, slide 20 - 21
+------------------------------------------------------------
+### 3.9 The Binomial Distribution, slide 22 - 26
+------------------------------------------------------------
+### 3.10 The Normal Distribution, slide 27 - 29
+------------------------------------------------------------
+### 3.11 The Empirical Rule, slide 30 - 33
+------------------------------------------------------------
+### 3.12 Summary, slide 34 - 36
+------------------------------------------------------------
