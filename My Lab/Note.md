@@ -368,8 +368,8 @@ If it is not realisti, then a straight line model is probably not the way to go.
 - ![Brute Force Approach](screenshots/bruteforce.png) <br>
 #### Calculus approach
 - Profit is maximized when derivative (rate of change) of profit
-- Through calculus one obtains the optimal value of price as $ P_opt = \frac{c*b}{1+b} $, where c is the production cost and b is the exponent in the power function.
-- In this example c=2 and b=-2.5 This gives $ P_opt = \frac{2*-2.5}{(1-2.5)} ≈ 3.33 $
+- Through calculus one obtains the optimal value of price as $ P_{opt} = \frac{c*b}{1+b} $, where c is the production cost and b is the exponent in the power function.
+- In this example c=2 and b=-2.5 This gives $ P_{opt} = \frac{2*-2.5}{(1-2.5)} ≈ 3.33 $
 - The value (-b) is known as `the price elasticity of demand`
 #### Visualizing the calculus solution
 - The area of the gray shaded box is the profit and the objective is t find the value of price for which the area of the box is largest.
@@ -401,26 +401,95 @@ If it is not realisti, then a straight line model is probably not the way to go.
     - The Empirical Rule
 ------------------------------------------------------------
 ### 3.1 Intro to Probabilistic Models, slide 1 - 6
+- Probabilistic models:
+    - These are models that incorporate random variables and probability distributions
+    - Random variables represent the potential outcomes of an uncertain event
+    - Probability distributions assign probabilities to the various potential outcomes
+    - We use probabilistic models in practice because realistic decision making often necessitates recognizing uncertainty (in the inputs and outputs of a process)
+- Key features of a probabilistic model:
+    - By incorporating uncertainty explicitly in the model we can measure the uncertainty associated with the outputs, for example by giving a range to a forecast, which is a more realistic goal
+    - In a business setting incorporating uncertainty is synonyous with understanding and quantifying the risk in a business process, and ideally leads to better management decisions
+- Examples:
+    - Oil Prices:
+        - If you run an energy intensive business, an airline for example, then the price of oil is a key determinant of your profitability.
+        - For medium or long-term investment planning(buying new planes) the future price of oil is important considereration.
+        - But who knows the price of oil in ten years? No-one. But we may be able to put a probability distribution around the future price and incorporate the uncertainty into the decision making process.
+    - Valuing a drug development company:
+        - A company has 10 drugs in a development portfolio
+        - Given a drug has been approved, you have predicted its revenue
+        - But whether a drug is approved or not is an uncertain future event (a random variable). You have estimated the probability of approval
+        - You only wish to invest in the company if the company's expected total revenue for the portfolio is over $10B in 5 years time
+        - You need to calculate the probability distribution of the total revenue to understand the investment risk
 ------------------------------------------------------------
 ### 3.2 Examples of Probabilistic Models, slide 7
+- Some examples of probabilistic models:
+    - Regression models (will discuss in module 4)
+    - Probability trees
+    - Monte Carlo simulation
+    - Markov models
 ------------------------------------------------------------
 ### 3.3 Regression Models, slide 8 - 9
+- E (Price | Carrats) = -259.6 + 3721 * Carrats
+- They gray band gives a prediction interval for the price of a diamond taken from this population
+- ![Diamond price by weight](screenshots/carats.png) <br>
+- Regression models use data to estimate the relationship between the mean value of the outcome (Y) and a predictor variable (X)
+- The intrinsic variation in the raw data is incorporated into forecasts from the regression model
+- THe less noise in the underlying data the more precise the forecasts from the regression model will be
 ------------------------------------------------------------
 ### 3.4 Probability Trees, slide 10
+- Probability trees allow you to propagate probabilities through a sequence of events
+- P(stop infringing) = 0.1 + (0.9*0.15) + (0.9*0.85*0.2) = 0.388
+- ![Tree](screenshots/probTree.png) <br>
+- My note:
+    - P(infringing) = 0.9 * 0.85 * 0.8 = 0.612
+    - 0.612 + 0.388 = 1
 ------------------------------------------------------------
 ### 3.5 Monte Carlo Simulation, slide 11 - 12
+- Monte Carlo simulation:
+    - From the demand model: 
+        - $ Quantity = 60,000 * Price^{-2.5} $
+    - The optimal price was 
+        - $ P_{opt} = \frac{c*b}{1+b} $
+        - where b=-2.5, c is the cost c=2
+        - $ P_{opt} = 3.33 $
+    - But what if b is not known exactly?
+    - Monte Carlo simulation replaces the number b=-2.5 with a random variable, and recalculates $P_{opt}$ using different realizations of this random variable from some stated probability distribution
+- Input and output from a MC simulation:
+    - Input: b from a uniform distribution between -2.9 and -2.1
+    - ![Uniform probability distribution for b](screenshots/mc_1.png) <br>
+    - Output: $ P_{opt} = \frac{c*b}{1+b} $
+    - 100,000 replications
+    - Interval = ( 3.1, 3.7 )
+    - ![Distribution for optimal price](screenshots/mc_2.png) <br>
 ------------------------------------------------------------
 ### 3.6 Markov Chain Models, slide 13 - 14
+- Markov chain models:
+    - Dynamic models for discrete time state space stransitions
+    - Example: employment status (the state of the chain)
+    - Treat time in 6 month blocks
+    - Model states:
+        - Employed
+        - Unemployed and looking
+        - Unemployed and not looking
+- Probability transition matrix
+    - ![Probability transition matrix](screenshots/markov.png)
+    - Markov property (lack of memory): transition probabilities only depend on the current state, not on prior states. Given the present, the future does not depend on the past.
 ------------------------------------------------------------
 ### 3.7 Building Blocks of Probability Models, slide 15 - 19
+
 ------------------------------------------------------------
 ### 3.8 The Bernoulli Distribution, slide 20 - 21
+
 ------------------------------------------------------------
 ### 3.9 The Binomial Distribution, slide 22 - 26
+
 ------------------------------------------------------------
 ### 3.10 The Normal Distribution, slide 27 - 29
+
 ------------------------------------------------------------
 ### 3.11 The Empirical Rule, slide 30 - 33
+
 ------------------------------------------------------------
 ### 3.12 Summary, slide 34 - 36
+
 ------------------------------------------------------------
