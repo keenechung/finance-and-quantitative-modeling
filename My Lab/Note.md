@@ -476,20 +476,115 @@ If it is not realisti, then a straight line model is probably not the way to go.
     - Markov property (lack of memory): transition probabilities only depend on the current state, not on prior states. Given the present, the future does not depend on the past.
 ------------------------------------------------------------
 ### 3.7 Building Blocks of Probability Models, slide 15 - 19
-
+- Building blocks:
+    - Random variables (discrete and continuous)
+    - Probability distributions
+    - Random variables represent the potential outcomes of an uncertain event
+    - Probability distributions assign probabilities to the various potential outcomes
+- A discrete random variable:
+    - Roll a fair die
+        | X      | #1  | #2  | #3  | #4  | #5  | #6  |
+        |--------|-----|-----|-----|-----|-----|-----|
+        | P(X=x) | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 | 1/6 |
+    - Probabilities lie between 0 adn 1 inclusive
+    - Probabilities add to 1
+- A continuous random variable:
+    - The percent change in the S&P500 stock index tomorrow:
+        - $ 100 * \frac{p_{t+1}-p_t}{p_t} $, where $p_t$ is the closing price on day t
+    - It can potentially take on any number between -100% and infinity
+    - For a continuous random variable probabilities are computed from areas under the probability density function
+- Probability distribution of S&P500 daily % cahnge
+    - ![SP500](screenshots/sp500.png)
+- Key summaries of probability distributions
+    - Mean ($μ$) measures centrality
+    - Two measures of spread:
+        - Variance ($σ^2$)
+        - Standard deviation ($σ$)
+    - ![Measures](screenshots/measures.png)
 ------------------------------------------------------------
 ### 3.8 The Bernoulli Distribution, slide 20 - 21
-
+- Bernoulli:
+    - The random variable X takes on one or two values:
+        - P(X=1) = p
+        = P(X=0) = 1-p
+    - Often viewd as an experiment that takes on two outcomes, success/failure. Success=1, failure=0
+    - $ μ = E(X) = 1*p + 0*(1-p) = p $
+    - $ σ^2 = E(X-μ)^2 = (1-p)^{2}p + (0-p)^{2}(1-p) = p(1-p) $
+    - $σ = \sqrt{p(1-p)} $
+    - $ For p=0.5, μ=0.5, σ^2=0.25, σ=0.5 $
+- Example: drug development
+    - Will a druge under development be approved?
+    - X = {Yes=1, No=0}
+    - P(X=Yes) = p = 0.65
+    - P(X=No) = 1 - p = 1 - 0.65 = 0.35
+    - If drug is approved then the projected revenue is $500m, 0 otherwise
+    - $ Expected(Revenue) = (\$500m * 0.65) + (\$0m * 0.35) = \$325m + \$0 = \$325m $
+    - My further calculation:
+        - $ σ = \sqrt{p(1-p)} = \sqrt{0.65(1-0.65)} = \sqrt{0.65*0.35} ≈ 0.477 $
+        - $ σ^2 = p(p-1) = 0.65(1-0.65) = 0.65*0.35 = 0.2275 $
 ------------------------------------------------------------
 ### 3.9 The Binomial Distribution, slide 22 - 26
-
+- The Binomial Distribution:
+    - A Binomial random variable is the number of success in n independent Bernoulli trials.
+    - Independent means that  P(A and B) = P(A) * P(B)
+    - Independence means that knowing that A has occurred provideds no information about the occurrence of B
+    - Independence is a common simplifying assumption in many probability models and makes their construction and subsequent calculations much easier
+    - Example:
+        - Toss a fair coin 10 times and count the number of heads (call this X)
+        - Then X has a Binomial distribution with parameters n=10 and p=0.5
+        - In general:
+            - $P(X=x) = \binom{n}{x}p^{x}(1-p)^{n-x}$, where $\binom{n}{x}$
+ is the binomial coefficient: $\frac{n!}{x!(n-x)!}$
+            - $ μ=E(X)=np, σ^2=E(X-μ)^{2}=np(1-p) $
+- Binomial Probability Distributions:
+    - ![Binomial Distribution](screenshots/binomialDistributions.png)
+- Example Binomial models for markets (oil for example):
+    - Assume that the market either goes up or down each day
+    - It goes up u% with probability p and down d% with probability 1-p
+    - Assume days are independent
+    - Example: p=0.55, 1-p=0.45, u=0.25%, d=0.22%
+    - Take a time horizon of 3 days
+    - There are 8 possible outcomes:
+        - {UUU}, {UUD}, {UDU}, {UDD}, {DUU}, {DUD}, {DDU}, {DDD}
+    - For each outcomes there will be an associated market move. For example, if we see {UUU} the the market goes up by a factor of 1.0025*1.0025*1.0025=1.007519, that is a little over 3/4 of a percent
+- Tree Representation:
+    - ![Tree Representation](screenshots/tree.png)
 ------------------------------------------------------------
 ### 3.10 The Normal Distribution, slide 27 - 29
-
+- The Normal distribution, colloquially known as the Bell Curve, is the most important modeling distribution
+- Many disparate processes can be well approximated by Normal distributions
+- There are mathematical theorems (the Central Limit Theorem) that tell us Normal distributions should be expected in many situations
+- A Normal distribution is characterized by its mean μ and standard deviation σ. It is symmetric about its mean
+- Example:
+    - There is a universality to the Normal distribution
+        - Biological: heights and weights
+        - Financial: stock returns
+        - Educational: exam scores
+        - Manufacturing: the length of an automotive component
+    - It is therefore often used as a distributional assumption in Monte Carlo simulations (knowing the mean and standard deviation is enough to define a Normal distribution)
+- Plots of various Normal distributions
+    - ![Plots of various Normal distributions](screenshots/variousNormal.png)
 ------------------------------------------------------------
 ### 3.11 The Empirical Rule, slide 30 - 33
-
+- The Empirical Rule is a rule for calculating probabilities of events when the underlying distribution or observed data is approximately Normally distributed
+- It states:
+    - There is an approximate 68% chance that an observation falls within one standard deviation from the mean
+    - There is an approximate 95% chance that an observation falls within two standard deviations from the mean
+    - There is an approximate 99.7% chance that an observation falls within three standard deviations from the mean
+- The Empirical Rule illustrated:
+    - ![The Empirical Rule illustrated](screenshots/empirical.png)
+- Empirical Rule example:
+    - Assume that the daily return on Apple’s stock is approximately Normally distributed with mean μ = 0.13% and σ = 2.34%
+    - What is the probability that tomorrow Apple’s stock price increases by more than 2.47%?
+    - Technique: count how many standard deviations 2.47% is away from the mean, 0.13%. Call this counter the z-score 
+        - $ Z = \frac{2.47 - 0.13}{2.34} = 1 $
+    - So, from the Empirical Rule the probability equals approximately 16%
 ------------------------------------------------------------
 ### 3.12 Summary, slide 34 - 36
-
+- What are probabilistic models?
+- Random variables and probability distributions -- the building blocks
+- Examples of probabilistic models
+- Summaries of probability distributions: means, variances and standard deviation
+- Special random variables: Bernoulli, Binomial and Normal
+- The Empirical Rule
 ------------------------------------------------------------
