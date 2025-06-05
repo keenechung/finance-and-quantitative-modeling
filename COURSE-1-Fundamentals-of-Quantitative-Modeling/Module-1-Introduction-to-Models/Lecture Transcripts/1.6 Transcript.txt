@@ -1,0 +1,220 @@
+I'm going to finish off this module
+now that we have been exposed to different sorts of models,
+the uses of models, the modeling process. We have been exposed to
+the terminology of models. And now I want to take a little bit
+of time to talk about these key mathematical functions. That you really do need to be
+familiar with if you're going to be successful at making quantitative models. So it's not as if you have to have
+a PhD in mathematics at this point, to be a useful modeller. I would never claim that. But you do have to have some facility with what I think of as the building
+blocks of quantitative models. So here are the four functions that I
+think you have to be comfortable with. And I'll explain, as I go through
+each of the four functions, what is so important about each one. And I'm going to try and characterize
+them in a way that lends itself to thinking about quantitative models. So here are the four functions. We're going to talk about linear
+functions, those are straight lines. We're going to talk about
+the power functions, things like quadratics and cubics. We'll talk about the exponential function. And we'll talk about the log function, which is formally the inverse
+of the exponential function. So let's have a look at
+these functions in turn now. So the linear function is probably
+the core building block of all models. And a linear function is
+simply a straight line. So you're looking now at a picture
+of a straight line function. It is characterized by two numbers, b and m, which are known as the intersect and
+the slope. So b is the height of the line above the origin that's at
+x equal to 0 on the graph. And m, the slope of the line. It tells you, as X moves by one unit,
+how much y the outcome has gone up by. So here's the equation for
+the straight line now. We're writing it as Y equals MX plus B. X would be the input to the model, and Y would be the output,
+and the two coefficients, or parameters are b, so
+I said the intercept, and m, the slope. Now, here's the essential
+characteristic of a straight line. It is that the slope is constant. Wherever you look on the graph,
+for any value of x, the slope of the graph, the value
+is always the same, it's always m. So as x changes by one unit, y goes up
+by m units regardless of the value of x. Now you have to ask yourself
+when you're modeling whether or not that assumption makes sense. Linear functions are the simplest
+functions that are out there. So they're often chosen for models. It doesn't necessarily mean
+that they're going to be right. And so, to use a linear function is
+to think carefully about whether or not this constant slope implication
+of a line is reasonable in practice. So let's think of an example here and
+we'll consider whether or not the linear function
+would be reasonable. Let's consider your
+salary as the y variable over time as you progress
+through your career. So x would be time, how long you've
+been working for, and y is your salary. Do you think a linear assumption
+there is going to be reasonable? And what would it imply? So a straight line implies
+that the slope is constant. That means, for every one-unit change in
+x, the change in y is always the same. So in the context of the example,
+you progressing through your career, and your salary increasing,
+if we used a straight line to model that, x is year, y is salary. It would be implying that your salary or pay rise was the same every year,
+all the way through your career. And you'd have to ask yourself,
+does that seem to be a realistic model for what is going on? I actually don't think it
+would be a realistic model. because I think at the beginning of your
+career salaries tend to go up faster and then much, much later on in your career,
+things tend to level off. And so that would be a sort of
+relationship that wouldn't necessarily lend itself to a linear function. So, I don't want to beat
+up on the linear functions. I don't want to say that
+they're not going to be useful. They're in fact incredibly useful, but you shouldn't be using one without
+asking yourself the critical question. Is it reasonable to expect this
+business process to exhibit linearity? And you say, you think of the word
+reasonable by the implication. Does it appear that the constant
+slope is viable in this situation. So that's the linear function. The next function we're going to
+talk about is the power function and I'm showing you here a graph that
+displays various power functions. Now we write the power function
+as y equals x to the power m. And what x to the power of m essentially
+means is we multiple x by itself m times. Examples that you might be familiar with
+are if we put in m equal to two we're going to get a quadratic. In fact, if we put in m equal to 1, any
+number raised to the power of 1 is itself. So you would get something
+linear coming out of this. And you can have fractional powers of m. You can have m equal to 1/2. Which is known as the square root. You can even have negative powers of m. M can equal minus one for example which would give you the graph
+of one over x, the reciprocal. So we can have various values for M and they will create different
+version of the power function. Now I have shown you power functions. Four various values of them, in fact. The ones I've just
+discussed on this graph and you can see the purple
+graph is m equal to 2. That's a quadratic. When m equals to 1, you see the blue
+graph, which is actually a straight line because if I say, any number
+raised to the power of one is itself. You can see m equal to 1/2 on here. That's the green curve on the picture. And that one is increasing, but
+it's increasing at a decreasing rate. And finally on here I've shown you
+the graph with m equal to minus 1. That's the sort of pinky colored one. And that shows a negative association,
+so what I'm showing you here on this slide is that in fact the
+power functions are very, very flexible. They can model all sorts of
+underlying relationships, increasing and decreasing,
+increasing at an increasing rate. That's the quadratic. Increasing at a decreasing rate. That's the square root function. So, a flexible family of functions. Language that we use for
+the power function, we will often term x the base and
+m the exponent. Now here comes the essential
+characteristic of the power function. Just as the essential characteristic
+of the straight line was that its slope was constant. There's something constant in a power
+function, but it's not the slope anymore, here's what it is. If x changes by 1%. Not 1 unit anymore, but 1%. Then, y is going to change
+by approximately n%. So the n in the exponent
+of the power function is relating percent change in
+x to percent change in y. And it's important that the word here is,
+I do have approximate in here. It is approximate. But it's a good approximation for
+small percent changes. And so, the key characteristic of a power function is that it relates percent
+change in x to percent change in y with the statement that that
+percent change is constant. So if I have x equal to 100 and
+I go up by 1%, then y is going to change by exactly
+the same percentage as if I had x equal to 200, and then took x up by 1% from 200. So it's an idea of this percent change,
+this proportionality, being constant percent change and
+x percent change and y, it's constant. Now, there are a couple of facts I just
+put in the math facts down at the bottom there, actually more,
+math facts than this, but these are really important
+ones about the power function. The x to the power m times x to
+the power n is, x to the m plus n, so the product here corresponds
+to the addition of the exponents. And x to the minus m is the same as 1 over
+x to the power m, and that's why we're able to use these negative powers to
+capture decreasing relationships. So there's the power function. Third up is the exponential function. Once again, I've drawn a graph with
+various exponential versions of the exponential function on here. They're all exponential functions, but
+they differ in their rate of growth and some of them are growing and
+some of them are decreasing. So we often talk about exponential
+growth for an increasing process and exponential decay for
+a decreasing process. The exponential function
+can capture both of these. The way it does it formulaically is
+we'll think of y = e to the power mx. Now, in this equation, e is standing for
+a very, very special number. That number is a mathematical constant
+that is approximately 2.71828. And so, rather than writing this number
+that technically has an infinite number of a decimal is associated
+with it we just call it e. And so, that's the base here and we're raising that number to
+the power mx and why this is different from the power function we think
+of it's different, it's where the x is. Here, it's in the exponent and
+not the base. The power function x was sitting in the
+base, now it's up there in the exponent. So we're letting the exponent
+vary this time around. And what's going to happen is that
+as you have different values for m, so we're going to get
+different relationships and on the slide of the exponential function
+I've put in some different values for m. The pink curve is m = -1,
+that's an exponential decay. If we take m to -3 then
+we decay more rapidly. You see the green curve
+is beneath the pink one. If we have m = 0.5,
+we've got an increasing exponential here. And if we have m = 1,
+because 1 is bigger than 0.5 where that's the purple graph we're increasing faster. So those are exponential functions and that was what I had been using to
+model the epidemic if you remember. Now, some facts about, or the essential
+characteristic about the exponential function is that the rate of change
+of y is proportional to y itself. And what that tells you is that there's
+an interpretation in the background here of m for small values, again, these are
+approximations for these interpretations. So let's say m is a small number, for
+example between -0.2 and positive 0.2. Then, what's going to come out of the
+exponential function is the idea that for every 1 unit change in x, there's going to be an approximate 100
+times m% proportionate change in y. So what you're seeing in
+the exponential function, and it's differing from the power function, is
+now we're talking about absolute change in x being associated with percent or
+proportionate change in y. And we're claiming that
+that is a constant. You go back to the power function. We were looking at percent change in x, relating to percent change
+in y through the constant m. And if we go back to the linear function,
+we were seeing absolute change in x, being related to absolute change
+in y through the constant m. So these different functions that
+we're looking at are capturing how we're thinking about x and y changing. Are we thinking about them
+changing in an absolute sense or are we thinking about them
+changing in a relative sense? So just going back to
+this interpretation here of the constant m in
+the exponential function. We can, say for example, if m = 0.05, then
+a one-unit increase in x is associated with an approximate 5% increase in y and
+that 5% is cosmic, it doesn't matter. Or the value of x. So every time x goes up by 1 unit,
+y increases approximately by another 5%, a relative or
+proportionate change. So once again the exponential
+function lets us understand how absolute changes in x are related
+to relative changes in y. One more to go and
+that's the log function. This is the log transformation. It's probably the most commonly used
+transformation in quantitative modeling. We're not looking at the raw data, then often times we're looking at
+the log transform of the data. And this is what a log curve looks like. It's an increasing function, but the feature is that it's
+increasing at a decreasing rate. So the log function is extremely useful when it comes to modeling processes that
+exhibit diminishing returns to scale. So diminishing returns to scale says
+we're putting more into the process. But each time we put an extra thing
+into the process, you get more out. But not as much as we used to. And so, you might think of diminishing
+returns to scale as you've cooked a big meal at Thanksgiving. And it needs to be cleaned up. Now, if you're doing the cleanup by
+yourself, it takes quite a while. If you have some, one person help you,
+it's probably going to be a bit faster. Maybe if you had two people help
+you it's going to be even faster. But if you go up to ten people in the
+kitchen all trying to help you clear up that meal, at some point people start
+getting in the way of one another, and the benefits of
+those incremental people coming in to help you clear up
+really fall away quite quickly. And so, that's an idea of
+dimensions returns from scale. From a mathematical process point
+of view we think about the log function as increasing but
+at a decreasing rate. Now as I said, all of these functions
+that I'm introducing have an essential characteristics. And the essential characteristic of
+the log function is that a constant proportionate change in x is associated
+with the same absolute change in y. So notice how that's the flip
+side of the exponential function. The exponential function
+had absolute changes in x, being related to relative changes in y. The log function is doing
+it the other way around. We're talking about proportionate changes
+in x being associated with the same absolute change in y. Again, when you get to the stage
+of doing modeling, and you're thinking about the business
+process, you need to be thinking about these ideas as you choose your model, a
+functional representation of the process. How do you think things are changing? Do you think it's absolute change in x
+being related to absolute change in y as a constant? Or do you think it's relative change
+in x to relative change in y? Do you think it's relative change
+in x to absolute change in y, or absolute change in x
+to relative change in y? And here, in the log function,
+again, the essential characteristic, that constant proportion that changes
+in x are associated with the same absolute changes in y. If you think your business
+process looks like that, then the log function is
+a good candidate for a model. So, picking up the idea of
+the proportionate change in x being associated with
+the same constant change in y, you can see how that's working
+with the log function. And in this particular example, if we work our way up the steps
+that I've shown you here, the steps all have exactly the same height but
+the length in the step is different. So we start off on the bottom left
+hand side of this plot by going from one eighth to a quarter,
+that's a doubling. And when we do that we take a step up. Then we double again. We go from a quarter to a half. When we do that, the function steps up. But it steps up by
+exactly the same amount. Then, we double again. We go from 0.5 to 1. The log function increases, but by exactly the same amount as when
+we went from a quarter to a half. And an eighth to a quarter. And finally, the last step on these stairs
+here is another doubling from 1 to 2, and you can see that the height of
+the step is exactly the same again. So, the height of the step is constant. It's the length of
+the step that is varying. And the one that I've chosen here is
+a doubling from each period to the next. So, if you think that relative changes in x are being associated with
+absolute changes in y, the same constant absolute change in y,
+then you're already saying, I think that there's some kind of log
+relationship in the background here. So, that's our log function. And here are some facts
+about the log function. The way that we write it is log,
+l-o-g, but there is a subscript, b,
+which is called the base of the logarithm. There are lots of bases out there. The only ones, the only base that
+I'm going to be using in this course is the very special base, where we
+actually have the base as the number e, and that's called the natural log. And I choose to use that one
+because the interpretations of models with natural logs
+tend to be a little easier, these percent changes that
+I was talking about before. Now, it is the case that the log
+is formerly known as the inverse, it undoes the exponential function. And so
+the log of e to the x equals x itself, and e to the power log of x is x, too. So you can see that log and e are undoing, and the exponential function
+are undoing one another. The essential math fact about these logs is the log of a product
+is equal to the sum of the log. So you can see log of x y equal to
+the log of x plus the log of y. So that is used as one goes through
+the analysis of these models that have log terms, and as I say, in this course,
+I'm only going to be using the natural logarithm and we'll write that as log(x)
+and forget the subscript ultimately. So there's the log function. Here they are presented for you. On one slide, the four essential
+math functions that we'll be using, the linear, the exponential,
+the log, and the power. And you can see that these,
+taken as a whole, are going to provide us with
+a very flexible set of curves to get us started in the quantitative
+modeling of business processes.

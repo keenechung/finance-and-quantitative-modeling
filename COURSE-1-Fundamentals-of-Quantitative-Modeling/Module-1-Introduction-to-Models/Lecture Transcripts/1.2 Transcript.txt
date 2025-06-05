@@ -1,0 +1,169 @@
+Here's the content for
+the very first module. And we'll start off by
+looking at some examples, and I discuss the uses of these models. I'm going to go through the key steps
+in the modeling process itself. I will start introducing
+the vocabulary for modeling, and we are going to have
+a look at the fundamental mathematical functions that you
+need to be comfortable with if you're going to be successful in
+implementing these quantitative models. And the four functions that will
+be appearing through the other modules in this course, the linear or
+straight line function, the power function with things like quadratics, the
+exponential function, and the logarithm. So we're going to do
+a review of those as well. Given that this is a course in modeling, we really need to get
+started by defining a model. Now in the business context, the models
+that we talk about are not physical models, so an architect might well create
+an architectural model of a building that they plan on creating, it's not that
+sort of model that we're talking about. What we're talking about,
+is a formal description of a business process, and so
+that's what we think of as a model. Now, that description is invariably going to involve a set
+of mathematical equations and incorporate what we term random variables. We'll discuss this in more detail
+later on in a later module, exactly what random variables are. But these are the elements typically,
+of a quantitative model. Now it's important to realize that
+it's almost always a simplification of the more complex business process, and so it's an art, as well as a science to achieve
+a suitable level of simplification. We don't want to over simplify,
+but on the other hands, if our models are overly complex,
+they will not be so useful. And, so, one needs to realize
+that they're not even striving, typically, to be an exact
+representation of what's going on. There's always a set of assumptions
+that underly the model, and it's important to be able to
+articulate those assumptions, and test the legitimacy of those assumptions. And in terms of implementation, within
+a business setting you'll find that most of the quantitative models are implemented
+using a spreadsheet tool like Excel, or Sheets, or
+potentially a custom computer program that is designed to specifically
+implement an individual model. So that's what we think about when we talk about a quantitative model
+in a business setting. Now, to provide some
+more concrete examples, I'm going to show you some models and illustrate the sorts questions
+that they're able to answer. So one of the things we might be
+interested in thinking about is, if we were into the jewelery business
+is how the price of a diamond varies as a function of its weight. We typically have a sense that heavier diamonds cost more money, but what
+exactly does that relationship look like? We could use a quantitative
+model to help us understand the form of that relationship. Now, if you're into public policy, and you're dealing perhaps with
+some outbreak of a disease, an epidemic,
+it's fundamental to be able to forecast, or anticipate the spread
+of that epidemic over time. Most importantly, you probably want to do some resource
+planning in the face of that epidemic. How many clinics do we need, how many physicians need to be available
+within the next six months, etc? And so that sort of question,
+understanding the spread of an epidemic over time, that's a place
+a quantitative model can be very useful. Going to the discipline of economics, one of the most fundamental ideas there,
+is to look at the association between the price of
+a product and the demand for that product. As I increase the price of my product,
+what happens to its demand? And ultimately,
+what's the best price to charge for my product if I want to
+maximize my profit? That's a question that we're
+going to come back too. So there's a relationship we
+would be interested in modeling. The relationship between price and demand. If I'm more in the marketing realm,
+I might be thinking about what's likely to happen in a market
+as I introduce a new product. What's the uptake of that
+product likely to be? Can I forecast the total
+number of units sold? And so understanding how a new
+product diffuses through a market is an idea that lends itself
+to quantitative modeling. So, those are some examples
+in disparate areas, but all can be addressed through
+the use of a quantitative model. I'm now going to go through
+each of the prior examples and illustrate how we might think
+about doing the modeling itself. And I've actually chosen these examples,
+so many of the functions that we're going to
+see are going to be a pre-cursor to the mathematical functions that we'll
+talk about later on in this module. And so, let's go back to thinking
+about the weight of a diamond, and the price that it's going to go for. And so,
+often times we think of representing, the model that we have through
+some graphical approach. And so, in this course I'm going to be
+using a lot of graphics because they are perhaps the most
+elegant way to produce, and represent, and
+share your models with other people. And so what you're looking at here is
+a graph where on the horizontal axis, we often call that the x-axis, you have the weight of the diamond
+that is measured in carats, and on the vertical axis you have
+the expected price of the diamond. And what I'm looking at
+here is a potential model. It's a very straightforward model,
+it's what we term a linear model because it's a straight line,
+and I have the equation associated with the model at
+the bottom of the slide here. And what I'll do later on is, discuss in
+much more detail such a linear equation, but right now I just want to show you that
+given such a model, you would be able to use it to help forecast
+the expected price of a diamond. And so if, for example, I'm looking at
+a diamond ring that weighs 0.3 of a carat, all that I need to do is go into this
+graph, identify the 0.3 on the horizontal axis, go up to the graph itself, the line,
+read off the value on the vertical axis that we often call the y-axis, and there
+I have an expected price for a diamond. And so in this particular case,
+we've got a linear model. It's not clear that that's
+going to work for all diamonds, but if you have a look at the range of
+the x-axis here, it's somewhat limited. These are diamonds between 0.15 and
+0.35 of a carat, it's the realm that I'm
+going to apply this model. I'm not saying that it necessarily applies
+to the diamond that weighs one carat or two carats way outside the range,
+but it might be reasonable that within this limited range one
+would see a linear relationship. So that's an example of what
+we call a linear model. What about the spread of an epidemic? Now, depending on the nature
+of the disease, and the time at which we
+are following the epidemic, one of the basic models,
+at least to get started with, to think about a spread of an epidemic,
+is what we term an exponential model. And here I have a graph of
+a exponential function. On the bottom axis we have Week. And on the vertical axis we have the
+number of cases that have been reported. And notice now that this graph,
+it's no longer linear, it's what we would determine
+a nonlinear relationship. It is growing very quickly. We've termed this exponential growth,
+and it might be more appropriate for the spread of an epidemic
+in its early phases. Now we would really hope that that
+exponential graph does not continue on for long, because the thing about
+these exponential graphs, they're sometimes called hockey sticks,
+one that refers to them within, in the business context is that
+they shoot up very, very quickly. And I would not sit here and claim that this would be a reasonable
+model over a long period of time. But in the initial phases of an epidemic, it might well serve as
+a reasonable approximation. And again, with such a structure,
+by which I mean the graph itself, you can,
+let's say we're sitting at week 30, and we want to make a comment about what
+we think is going to happen at week 35. We can use the graph. We can use the equation to help us predict
+how many cases they're going to be. So that's an example of
+a non-linear relationship, and in particular it's called
+an exponential function, and I have presented the function
+at the bottom of the slide. We'll talk about it in
+more detail later on. Another example, the economics example,
+the idea of price and demand. Now in this situation we are looking at what is often
+termed a negative association. The previous two examples, the graph,
+one was a straight line, the other one was an exponential function, were both
+going from bottom left to top right. We termed that positive association. This time around, we're looking at
+something that has negative association, because typically for most goods,
+as the price increases, then sold, the quantity sold,
+is actually going to decrease. And so that's why we've got a graph
+that goes from top left to bottom right. Now, I'm using a different
+sort of mathematical function to capture this association. And the type of function that you're
+looking at here is called power function. In terms of the model that we're using, we have the quantity demanded is equal
+to some multiplicative constant, that's the 60,000 times
+the price to the power -2.5. And for the particular data
+that sat behind this example, this was a reasonable model to use. This is different from
+the exponential function, the power function that
+we're looking at here. And it has some very special features,
+this power function again to be describe, but it's an example of another place where
+these quantitative models can be very, very, useful and in particular one of the
+uses that one would be able to find for this model is to think about
+what an optimal price should be. Clearly if you'd increase the price, one unit of this product is
+going to bring a more money but you're going to be selling less
+units if you increase the price. So there's a trade off going on there. And the question is,
+how do we optimize that trade off? How do we find the best price? And so economics is a discipline
+that is full of quantitative models, and this is a basic quantitative model for
+demand. So, my final example here is a model for the uptake of a new product,
+and it's different from the previous examples that we've seen
+because this graph has a feature. The feature is that it's increasing,
+but then it starts to tail off, but the reason for
+that is because the variable, the outcome that I'm looking at is
+the proportion of a market that has been exposed to the product, that has
+bought the product, and a proportion can never be greater than one, so therefore
+the graph cannot keep going up and up. This particular function that we're
+looking at here is termed a logistic function, and it has the potential to
+map a process where, at the initial stages there's a slow start, that would be
+the early adopters picking up the product, then there's a rapid take up
+of the product, as more and more people get to know about it,
+and then, at some point, you can't have
+a proportion greater than one. So, the proportion of the market
+that has actually purchased the product, has to start to tail off,
+cannot go above one. And so this is a special sort of curve
+that is able to capture these intrinsic features of the outcome variable that
+I'm interested in here, the proportion. Proportions go between zero and one so
+I need a model that can reflect that. This logistic function has the ability
+to do that, and I've just presented at the bottom of the slide here what that
+logistic model looks like mathematically. So those are four examples of models, and you can see that from a qualitative
+perspective they're able to pick up different features
+in an underlying process. A linear model, an exponential model,
+we saw the power function, and here we have finished off by having
+a look at a logistics model. So these would all be quantitative
+models that would certainly have a role in a business setting.

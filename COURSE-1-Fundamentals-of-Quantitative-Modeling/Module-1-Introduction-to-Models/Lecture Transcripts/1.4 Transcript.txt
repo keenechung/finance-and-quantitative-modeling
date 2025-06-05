@@ -1,0 +1,92 @@
+I'm now going to talk about some of
+the key steps in the modeling process. So every model is different, but they do share some common features in
+the way that the model was created. So I will call that the work flow. So typically we begin the modeling
+process by identifying and defining some inputs and outputs. What does the model trying to predict,
+what is the key outcome, and what are the underlying variables
+that are going to help us predict or understand that outcome. So an identification of the inputs and
+the outputs of the model, they need to be articulated,
+ideally defined. There's also a part where you need to
+think about the scope of the model and so when I talk about
+the scope of the model and it's like, what is it being applied to? And so going back to the diamonds example,
+if you have a look at the size of the diamonds that the model
+was trying to predict, it was little diamonds,
+basically between .1 and .3 of a carat. And that's what I mean by the scope. It was a model was being created
+to work in a particular instance. I wouldn't sit here an claim that
+same model would be useful for pricing diamonds that weighed one carat or
+two carats, so you need to think and
+define what the scope of. Of the model,
+where is it going to be applied. So those are the inputs, outputs,
+and the scope of the model. Then once you've got those basic building
+blocks defined, you're going to formulate the model and that's very much
+an art as well as a science. It's going to be a step that
+involves your understanding of the underlying business process,
+and it's where all of those mathematical and statistical ideas
+come in through the model formulation. So we have created a model. Then once you've created the model
+you shouldn't just go and use it. You need to think about whether or not. That model is performing well, and in
+particular two of the activities that we typically go through once we have created
+a model are a sensitivity analysis. So all of the models take inputs,
+their underlying assumptions. How sensitive are the outputs
+to those inputs. And identifying where
+those sensitivity lie. Helps us understand the value of
+the model and where, in particular, we might be reticent in using it so
+there's a sensitivity analysis. There's also what I would term
+a validation of the model forecast so oftentimes, the models are going to
+be used in some forecasting or prediction context. And it would be foolish to
+use a model that was creating forecasts without at some point looking to
+see whether or not those forecasts were close to the actual values
+that ultimately were observed. And so,
+sometimes that's sort of easy to do. We, When there's an election, you can look
+at a political poll that will try and tell you who's going to win the election. Then the election happens and you actually get a point that you can
+validate the initial polls against. So oftentimes there is
+an ultimate realization, so for example maybe we have a model for
+the price of oil in one year's time. So I'll make my forecast, then what I
+should do is in one year look to see what the price of oil actually is, and see how
+close my forecast is to the actual price. Now validation takes many forms. That's sort of what I've discussed
+was a looking out into the future. Maybe your data doesn't come over time,
+your model isn't a time series model. Then what one often does is withhold
+some of the data from the model itself. And we call that a holdout sample. And then what we might
+do is fit the model, train the model on a subset of
+the data that we have available and look to see how well it
+forecasts the holdout sample. So there should typically be
+some validation process after the model has been created. Then if you're happy
+with the validation and the sensitivity analysis
+you ask the big question. And the big question is
+not is the model right? Because as I've said almost
+every model you create is going to be a simplification. So it's not going to be perfect. That's an unrealistic assumption. And that's why I've put in here,
+is the model fit for purpose? And so that is a question. That the person creating
+the model has to decide. Is it suitable for
+the purpose that it's being used for. Not, is it right? But, is it helpful? And there's a very famous
+saying by Professor Box who said all models are wrong but
+some are useful, and that's the idea that I'm trying to get
+at when I say is the model fit for purpose rather than is the model right. Now if it's not fit for purpose,
+if you're not happy with your model. Then you're going to go back and
+revisit some of the initial steps. Maybe you need some additional inputs. Maybe you've been using
+your model out of scope. And so you need to redefine your scope. And certainly you might need
+to reformulate the model. As you realize, as I say, for example, that an important variable had
+been missed out of the model. And so it is an inherently iterative
+process, this model building. In my own experience, I have never
+managed to write down a model and use it the first time around. There's always this feedback component. And so you shouldn't feel that
+that is a failure in any sense. It's absolutely to be expected. But at some point hopefully you
+declare your model fit for purpose and then you go into the ultimate activity,
+which is to implement it. And that's the part that
+takes you to the spreadsheet modeling component of the specialization. So those are the key steps
+in the modeling process. Now, as I've alluded to, there is
+an iterative component to this, and so what happens if the model doesn't work? What happens if some of our forecasts
+are lousy, is that the end of the world. Well, I don't think so. In fact, when the observed
+outcome from the model differs greatly from the model's predictions,
+so it was a lousy predicting model, hopefully not everywhere, but
+maybe one or two points or observations. Then it turns out that that can be very,
+very informative, because if you can identify the reason why your
+model has not predicted or performed well, you've probably learned
+something new that you didn't know before. And that Is one of the great
+benefits of modeling, the actual ability to learn new things
+through the process by realizing that your current understanding
+isn't able to map to reality. And I've got an example in a couple of the modules coming up that will
+make that point more explicit. And I would certainly come back to it. So the story is not to be totally disappointed if
+the model isn't always working. There's an opportunity to
+learn something new there. It's definitely the case
+that modeling is continuous. It's an evolutionary process. And ultimately,
+as we identify the weaknesses and limitations and
+iterate through the modeling process, we hope to be able to overcome
+some of those limitations. So an initial model not working
+well is not the end of the world. It's a chance to learn. That's how I think about it.
